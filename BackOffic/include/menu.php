@@ -51,7 +51,7 @@ $dt = $rq->fetch();
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="orders.php"><img src="img/icon/cart.png" alt=""><span><?=$dt[0]?></span></a>
+                        <a href="orders.php"><img src="img/icon/cart.png" alt=""><span></span></a>
                         <a class="nav-link" href="profile.php"><img class="img-responsive rounded-circle border border-dark"  width="30" height="30" src="../admin/img/<?=$data['image']?>" alt="" ></a>
                     </div>
                 </div>

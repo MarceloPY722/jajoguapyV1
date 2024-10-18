@@ -66,7 +66,7 @@ $qr=$bd->prepare("BEGIN;
                                 <i class="fa fa-star-o"></i>
                                 <span> - 5 Reviews</span>
                             </div>
-                            <h3>$<?=$data['prix_vente']?><span><?=$data['prix_vente']-100?></span></h3>
+                            <h3>₲<?=$data['prix_vente']?></h3>
                             <div class="product__details__cart__option">
                                 <div class="quantity">
                                     <div class="pro-qty">

@@ -1,8 +1,4 @@
-<?php
-include './include/cnx.php';
-$compraExitosa = true; 
-$numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
-?>
+<?php include './include/cnx.php'; $compraExitosa = true;  $numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -46,6 +42,11 @@ $numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
             margin-bottom: 20px;
             color: #fff;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -61,6 +62,12 @@ $numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
         .button:hover {
             background-color: #45a049;
         }
+        .button.secondary {
+            background-color: #3498db;
+        }
+        .button.secondary:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
@@ -69,8 +76,11 @@ $numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
             <div class="icon success">&#10004;</div>
             <h1>¡Su compra ha sido exitosa!</h1>
             <p>Número de orden: <?php echo $numeroOrden; ?></p>
-            <p>Gracias por su compra. Recibirá un correo electrónico con los detalles de su pedido.</p>
-            <a href="#" class="button" onclick="descargarPDF()">Descargar Comprobante (PDF)</a>
+            <p>Gracias por su compra.</p>
+            <div class="button-container">
+                <a href="#" class="button" onclick="descargarPDF()">Descargar Comprobante (PDF)</a>
+                <a href="index.php" class="button secondary">Volver al Inicio</a>
+            </div>
         <?php else: ?>
             <div class="icon error">&#10008;</div>
             <h1>Error en la Compra</h1>
@@ -78,7 +88,7 @@ $numeroOrden = 'ORD-' . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
             <a href="index.php" class="button">Volver al Inicio</a>
         <?php endif; ?>
     </div>
-
+    
     <script>
         function descargarPDF() {
             // Aquí añadiremos la lógica para descargar el PDF en el futuro

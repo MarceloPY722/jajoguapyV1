@@ -106,7 +106,7 @@
                                 <p>Seconds</p>
                             </div>
                         </div>
-                        <a href="" class="primary-btn">Compra Ya!</a>
+                        <a href="/jajoguapyv2/BackOffic/shop-details.php?id=19" class="primary-btn">Compra Ya!</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                 <div class="col-lg-12">
                     <div class="section-title">
                         <span>Ultimas Noticias</span>
-                        <h2>Dispositivos Nuevos</h2>
+                        <h2></h2>
                     </div>
                 </div>
             </div>
@@ -128,8 +128,19 @@
                     <div class="blog__item">
                         <div class="blog__item__pic set-bg" data-setbg="img/workperch-mR3UqBUU9Ts-unsplash.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
-                            <h5></h5>
+                            <span><img src="img/icon/calendar.png" alt=""> 16 Octubre 2024</span>
+                            <h5>Siri x Chat GPT</h5>
+                            <a href="">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic set-bg" data-setbg="img/sam-pak-WIeJcQrd3Tw-unsplash.jpg"></div>
+                        <div class="blog__item__text">
+                            <span><img src="img/icon/calendar.png" alt=""> 1 Octubre 2024</span>
+                            <h5>LinkBuds Fit | Sony</h5>
                             <a href="">Leer más</a>
                         </div>
                     </div>
@@ -138,18 +149,8 @@
                     <div class="blog__item">
                         <div class="blog__item__pic set-bg" data-setbg="img/onur-binay-OKjJZNTl004-unsplash.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5></h5>
-                            <a href="">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/sam-pak-WIeJcQrd3Tw-unsplash.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5></h5>
+                            <span><img src="img/icon/calendar.png" alt=""> 9 Septiembre 2024</span>
+                            <h5>Presentacion del Iphone 16</h5>
                             <a href="">Leer más</a>
                         </div>
                     </div>
@@ -159,8 +160,69 @@
     </section>
    
     <footer class="footer">
-      <!--Falta footer-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="/jajoguapyv2/assets/logoW.png" alt=""></a>
+                        </div>
+                        <p>Tu Futuro Tecnologico en la palma de tu mano.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tienda</h6>
+                        <ul>
+                            <li><a href="#">Celulares</a></li>
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                            <li><a href="#">Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Atención al C.</h6>
+                        <ul>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="#">Metodos de Pagos</a></li>
+                            <li><a href="#">Delivery</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-7">
+                    <div class="footer__widget">
+                        <h6>Atención al C.</h6>
+                        <ul>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="#">Metodos de Pagos</a></li>
+                            <li><a href="#">Delivery</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        
+                        <p>Todos los derechos reservado | JajoguaPy © 
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    
 
     <style>
     .categories__hot__deal {
