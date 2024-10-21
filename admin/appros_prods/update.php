@@ -12,7 +12,7 @@ $appro = $_POST['appro'];
 $qte = $_POST['qte'];
 $req = $bd->prepare("update appros_prods set prod_id=?,appro_id=?,qte=? where id=?");
 $req->execute([$prod,$appro,$qte,$id]);
-header('location: /PFF/admin/appros_prods/index.php?msg=updated');
+header('location: /Jajoguapyv2/admin/appros_prods/index.php?msg=updated');
 }
 
 ?>
@@ -33,13 +33,13 @@ header('location: /PFF/admin/appros_prods/index.php?msg=updated');
 
 
     <div class="row">
-      <h3>Modifier une approvisionnement produit</h3>
+      <h3>Editar un suministro de producto</h3>
       <br />
       <div class="card">
         <div class="card-body">
           <form method="post">
           <div class="form-group">
-              <label for="prod">Produit</label>
+              <label for="prod">Producto</label>
               <select name="prod" id="prod" class="form-control" placeholder="" aria-describedby="prod">
                 <?php $qer=$bd->query("select * from produits");
                       while($dt = $qer->fetch()):
@@ -49,7 +49,7 @@ header('location: /PFF/admin/appros_prods/index.php?msg=updated');
               </select>
             </div>
             <div class="form-group">
-              <label for="appro">approvisionnement</label>
+              <label for="appro">Suministrar</label>
               <select name="appro" id="appro" class="form-control" placeholder="" aria-describedby="appro">
                 <?php $qer=$bd->query("select * from appros");
                       while($dt = $qer->fetch()):
@@ -59,11 +59,11 @@ header('location: /PFF/admin/appros_prods/index.php?msg=updated');
               </select>
             </div>
             <div class="form-group">
-              <label for="qte">Quantite</label>
+              <label for="qte">Cantidad</label>
               <input value="<?=$data['qte']?>" type="number" name="qte" id="qte" class="form-control" placeholder="" aria-describedby="qte">
             </div>
             <div class="form-group">
-              <button name="submit" class="btn btn-warning btn-block">Modifier</button>
+              <button name="submit" class="btn btn-warning btn-block">Modificar</button>
             </div>
           </form>
         </div>
@@ -74,11 +74,7 @@ header('location: /PFF/admin/appros_prods/index.php?msg=updated');
 
 
     <!-- Footer -->
-    <footer class="main">
-
-      &copy; 2022 <strong>SHOPUP</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
-
-    </footer>
+   
   </div>
 
 

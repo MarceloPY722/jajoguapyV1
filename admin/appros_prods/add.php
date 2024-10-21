@@ -8,7 +8,7 @@ $appro = $_POST['appro'];
 $qte = $_POST['qte'];
 $req = $bd->prepare("insert into appros_prods(prod_id,appro_id,qte) values(?,?,?)");
 $req->execute([$prod,$appro,$qte]);
-header('location: /PFF/admin/appros_prods/index.php?msg=added');
+header('location: /Jajoguapyv2/admin/appros_prods/index.php?msg=added');
 }
 
 ?>
@@ -29,13 +29,13 @@ header('location: /PFF/admin/appros_prods/index.php?msg=added');
 
 
     <div class="row">
-      <h3>Ajouter une approvisionnement produit</h3>
+      <h3>Agregar un suministro a un producto</h3>
       <br />
       <div class="card">
         <div class="card-body">
           <form method="post">
           <div class="form-group">
-              <label for="prod">Produit</label>
+              <label for="prod">Producto</label>
               <select name="prod" id="prod" class="form-control" placeholder="" aria-describedby="prod">
                 <?php $qer=$bd->query("select * from produits");
                       while($dt = $qer->fetch()):
@@ -45,7 +45,7 @@ header('location: /PFF/admin/appros_prods/index.php?msg=added');
               </select>
             </div>
             <div class="form-group">
-              <label for="appro">approvisionnement</label>
+              <label for="appro">Suministrar</label>
               <select name="appro" id="appro" class="form-control" placeholder="" aria-describedby="appro">
                 <?php $qer=$bd->query("select * from appros");
                       while($dt = $qer->fetch()):
@@ -55,11 +55,11 @@ header('location: /PFF/admin/appros_prods/index.php?msg=added');
               </select>
             </div>
             <div class="form-group">
-              <label for="qte">Quantite</label>
+              <label for="qte">Cantidad</label>
               <input type="number" name="qte" id="qte" class="form-control" placeholder="" aria-describedby="qte">
             </div>
             <div class="form-group">
-              <button name="submit" class="btn btn-primary btn-block">Ajouter</button>
+              <button name="submit" class="btn btn-primary btn-block">Agregar</button>
             </div>
           </form>
         </div>
@@ -69,12 +69,6 @@ header('location: /PFF/admin/appros_prods/index.php?msg=added');
     </div>
 
 
-    <!-- Footer -->
-    <footer class="main">
-
-      &copy; 2022 <strong>SHOPUP</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
-
-    </footer>
   </div>
 
 

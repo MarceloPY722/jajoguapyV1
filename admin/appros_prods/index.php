@@ -20,17 +20,17 @@
     <div class="row">
       <div class="col-md-12">
         <?php if(isset($_GET['msg']) && $_GET['msg']=='added'): ?>
-        <div class="alert alert-success">Ajouter avec succes
+        <div class="alert alert-success">Agregado exitosamente
           <span data-dismiss="alert" class="close">&times;</span>
         </div>
         <?php endif; ?>
         <?php if(isset($_GET['msg']) && $_GET['msg']=='deleted'): ?>
-        <div class="alert alert-danger">Supprimer avec succes
+        <div class="alert alert-danger">Eliminado exitosamente
           <span data-dismiss="alert" class="close">&times;</span>
         </div>
         <?php endif; ?>
         <?php if(isset($_GET['msg']) && $_GET['msg']=='updated'): ?>
-        <div class="alert alert-warning">modifier avec succes
+        <div class="alert alert-warning">Modificado exitosamente
           <span data-dismiss="alert" class="close">&times;</span>
         </div>
         <?php endif; ?>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="row">
-      <h3>Liste des Approvisionnements produit</h3>
+      <h3>Lista de suministro de productos</h3>
       <br />
 
       <script type="text/javascript">
@@ -82,14 +82,14 @@
         <thead>
           <tr class="replace-inputs">
             <th>#</th>
-            <th>Image</th>
-            <th>Produit</th>
-            <th>prix d'Achat</th>
-            <th>Quantite</th>
-            <th>categorie</th>
-            <th>Fournisseur</th>
-            <th>Action</th>
-            <th>Action</th>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Precio de Compra</th>
+            <th>Cantidad</th>
+            <th>Categoria</th>
+            <th>Proveedor</th>
+            <th>Accion</th>
+            <th>Accion</th>
           </tr>
         </thead>
         <tbody>
@@ -108,17 +108,17 @@
             <td><?= $data['nom'] ?></td>
             <td><?= $data['nomf'] ?></td>
             <td>
-              <a href="/PFF/admin/appros_prods/update.php?id=<?= $data['id'] ?>"
+              <a href="/Jajoguapyv2/admin/appros_prods/update.php?id=<?= $data['id'] ?>"
                 class="btn btn-default btn-sm btn-icon icon-left">
                 <i class="entypo-pencil"></i>
-                Edit
+                Editar
               </a>
               </td>
               <td>
-              <a href="/PFF/admin/appros_prods/delete.php?id=<?= $data['id'] ?>"
+              <a href="/Jajoguapyv2/admin/appros_prods/delete.php?id=<?= $data['id'] ?>"
                 class="btn btn-danger btn-sm btn-icon icon-left">
                 <i class="entypo-cancel"></i>
-                Delete
+                Eliminar
               </a>
             </td>
           </tr>

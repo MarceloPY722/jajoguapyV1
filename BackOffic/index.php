@@ -61,10 +61,15 @@
                             <h5><?=$data['prix_vente']?>₲</h5>
                         </div>
                     </div>
+                    
                 </div>
                 <?php endwhile;?>
             </div>
         </div>
+        <div class="boton">
+        <a href="#" class="primary-btn">Ver Mas Productos</a>
+        </div>
+        
     </section>
     
     <section class="categories spad">
@@ -268,6 +273,18 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
 
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.primary-btn {
+    text-decoration: none;
+    /* Aquí tus otros estilos del botón */
 }
     </style>
 
